@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -40,6 +41,55 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RDx-TW-gBT">
+            <objects>
+                <viewController id="D82-UH-EG5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0OR-SN-rn6"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xou-5P-ekE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="enO-jR-6OF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WHn-Pr-BLL">
+                                <rect key="frame" x="167" y="60" width="125" height="138.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gF8-SY-O3p">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="138.5"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adw-S1-PVA">
+                                <rect key="frame" x="125" y="60" width="125" height="138.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="116"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a wedding" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7f4-4r-i9V">
+                                <rect key="frame" x="121.5" y="238.5" width="132.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="adw-S1-PVA" firstAttribute="centerX" secondItem="enO-jR-6OF" secondAttribute="centerX" id="DC2-fc-VCj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WHn-Pr-BLL" secondAttribute="trailing" constant="67" id="Ynf-BC-TS4"/>
+                            <constraint firstItem="adw-S1-PVA" firstAttribute="top" secondItem="0OR-SN-rn6" secondAttribute="bottom" constant="40" id="Zv7-Fs-d60"/>
+                            <constraint firstItem="WHn-Pr-BLL" firstAttribute="leading" secondItem="enO-jR-6OF" secondAttribute="leading" constant="167" id="aD6-i8-PUM"/>
+                            <constraint firstItem="WHn-Pr-BLL" firstAttribute="top" secondItem="0OR-SN-rn6" secondAttribute="bottom" constant="40" id="fdN-gP-SuS"/>
+                            <constraint firstItem="7f4-4r-i9V" firstAttribute="centerX" secondItem="enO-jR-6OF" secondAttribute="centerX" id="iW0-Uu-l1a"/>
+                            <constraint firstItem="7f4-4r-i9V" firstAttribute="top" secondItem="adw-S1-PVA" secondAttribute="bottom" constant="40" id="lKu-ar-nCf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="chr-e1-yDy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888.79999999999995" y="136.28185907046478"/>
         </scene>
     </scenes>
 </document>
